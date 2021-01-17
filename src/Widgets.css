@@ -1,0 +1,53 @@
+.widgets{
+    flex: 0.3;
+    position: sticky;
+    overflow-y: scroll;
+}
+
+/*hide scroll bar for chrome oprera */
+.widgets::-webkit-scrollbar{
+display: none;
+}
+
+/*hide scroll bar for edge firefox*/
+.widgets{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.widgets_input{
+    display: flex;
+    align-items: center;
+    background-color: var(--twitter-background);
+    padding: 10px;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-top: 20px;
+
+}
+
+.widgets_input > input{
+    background: none;
+    background-color: var(--twitter-background);
+    font-size: 20px;
+    border: none;
+    padding-left: 30px;
+}
+
+.widgets_searchIcon{
+    color: grey;
+}
+
+.widgets_widgetContainer{
+    margin-top: 15px;
+    margin-left: 20px;
+    padding: 20px;
+    background-color: #fef8fa;
+    border-radius: 20px;
+}
+
+
+
+.widgets_widgetContainer > h2 {
+    font-size: 18px;
+    font-weight: 800;
+  }
